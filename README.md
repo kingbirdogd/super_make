@@ -1,4 +1,4 @@
-# supper_make
+# super_make
 
 ## Getting Started
 
