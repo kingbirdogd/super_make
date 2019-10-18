@@ -51,9 +51,11 @@ Compatibility
 All Unix and Linux Like platform
 
 Authors
-AU Gwok Dung David:
+AU Gwok Dung David
 Email: kingbirdogd@gmail.com
 Linkedin: https://www.linkedin.com/in/david-au-15632561/
 
 License
 This project is licensed under the BSD License
+
+
