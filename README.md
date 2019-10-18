@@ -1,6 +1,6 @@
-supper_make
+# supper_make
 
-Getting Started
+## Getting Started
 
 This Project Provide a Super Makefile which can easily to build the static library, shared library and the executable in all Unix Like OS
 
@@ -15,14 +15,14 @@ export PROJECT_HOME:=$(shell pwd|sed "s/\/$$//g;")
 include $(PROJECT_HOME)/common.mk
 
 
-Make a Static Library Makefile
+## Make a Static Library Makefile
 
 TYPE:=STATIC
 
 include $(PROJECT_HOME)/common.mk
 
 
-Make a Shared Library Makefile
+## Make a Shared Library Makefile
 
 TYPE:=SHARE
 
@@ -33,7 +33,7 @@ include $(PROJECT_HOME)/common.mk
 #DEPS means depends on the statci_example module
 
 
-Make a Executable Makefile
+## Make a Executable Makefile
 
 TYPE:=EXE
 
@@ -44,7 +44,7 @@ include $(PROJECT_HOME)/common.mk
 #DEPS dynamic_example, and dynamic_example depends static_example, so this object will auto depends static_example
 
 
-Make a Target depends on System package Makefile
+## Make a Target depends on System package Makefile
 
 TYPE:=SHARE
 
@@ -69,7 +69,7 @@ include $(PROJECT_HOME)/common.mk
 #python3 py_example.py
 
 
-Make Targets Paths
+## Make Targets Paths
 
 #If make in Project XXX folder
 
@@ -84,12 +84,12 @@ Make Targets Paths
 ../XXX_build/XXX/lib
 
 
-Compatibility
+## Compatibility
 
 All Unix and Linux Like platform
 
 
-Authors
+## Authors
 
 AU Gwok Dung David
 
@@ -98,7 +98,7 @@ Email: kingbirdogd@gmail.com
 Linkedin: https://www.linkedin.com/in/david-au-15632561/
 
 
-License
+## License
 
 This project is licensed under the BSD License
 
