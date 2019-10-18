@@ -4,8 +4,8 @@ Getting Started
 This Project Provide a Super Makefile which can easily to build the static library, shared library and the executable in all Unix Like OS
 
 Prerequisites
-1) Copy the common.mk to the project root folder
-2) Create a Makefile in the root folder with two line:
+Copy the common.mk to the project root folder
+Create a Makefile in the root folder with two line:
 export PROJECT_HOME:=$(shell pwd|sed "s/\/$$//g;")
 include $(PROJECT_HOME)/common.mk
 
