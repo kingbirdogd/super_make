@@ -1,5 +1,6 @@
+PKG_CONFIG:=pkg-config
 export PATH:=/usr/local/bin:$(PATH)
-export PKG_CONFIG_PATH:=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
+export PKG_CONFIG_PATH:=$(shell $(PKG_CONFIG) --variable pc_path $(PKG_CONFIG))
 #calc current
 ifeq ($(shell uname),Darwin)
 SO_NAME:=install_name
@@ -29,7 +30,6 @@ ifndef MAKE_NAME
 MAKE_NAME:=Makefile
 endif
 ifndef PKG_CONFIG
-PKG_CONFIG:=pkg-config
 endif
 ifndef BIN_SUBFFIX
 BIN_SUBFFIX:=
